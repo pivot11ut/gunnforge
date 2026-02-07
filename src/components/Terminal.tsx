@@ -201,6 +201,7 @@ export default function Terminal() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               className="bg-transparent border-none outline-none text-green-400 w-full font-mono"
+              style={{ color: '#00ff00' }}
               autoComplete="off"
               spellCheck="false"
             />

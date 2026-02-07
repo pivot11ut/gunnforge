@@ -59,6 +59,22 @@ body {
   color: var(--terminal-text);
 }
 
+/* Input styling */
+input {
+  color: var(--terminal-text) !important;
+  -webkit-text-fill-color: var(--terminal-text) !important;
+}
+
+/* Override autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--terminal-text) !important;
+  -webkit-box-shadow: 0 0 0 30px var(--terminal-bg) inset !important;
+  box-shadow: 0 0 0 30px var(--terminal-bg) inset !important;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
