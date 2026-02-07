@@ -20,7 +20,19 @@ export async function createToken(payload: UserPayload): Promise<string> {
 export async function verifyToken(token: string): Promise<UserPayload | null> {
   try {
     const { payload } = await jwtVerify(token, JWT_SECRET);
-    return payload as UserPayload;
+
+    // Validate payload has required fields
+    if (
+      typeof payload.id === 'string' &&
+      typeof payload.username === 'string'
+    ) {
+      return {
+        id: payload.id,
+        username: payload.username,
+      };
+    }
+
+    return null;
   } catch (error) {
     return null;
   }

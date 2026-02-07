@@ -13,7 +13,7 @@ export function getUsers(): User[] {
   const usersPath = join(process.cwd(), 'data', 'users.json');
   const fileContent = readFileSync(usersPath, 'utf-8');
   const data = JSON.parse(fileContent);
-  cachedUsers = data.users;
+  cachedUsers = data.users as User[];
   return cachedUsers;
 }
 
