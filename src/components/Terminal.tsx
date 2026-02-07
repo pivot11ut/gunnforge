@@ -168,7 +168,7 @@ export default function Terminal() {
   return (
     <div
       ref={terminalRef}
-      className="min-h-screen bg-black text-green-400 font-mono p-4 overflow-y-auto cursor-text"
+      className="terminal-container min-h-screen bg-black text-green-400 font-mono p-4 overflow-y-auto cursor-text"
       onClick={() => inputRef.current?.focus()}
     >
       <div className="max-w-4xl mx-auto">

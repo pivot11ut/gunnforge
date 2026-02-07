@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
-import { JetBrains_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
+import './globals.css';
 import './terminal-globals.css';
 
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'GunnForge - Terminal',
-  description: 'Command-line interface for projects and crafts showcase',
+  title: 'GunnForge',
+  description: 'Projects and crafts showcase with members area',
 };
 
 export default async function RootLayout({
@@ -16,7 +17,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

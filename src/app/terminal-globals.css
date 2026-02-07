@@ -46,14 +46,14 @@
   pointer-events: none;
 }
 
-/* Terminal text selection */
-::selection {
+/* Terminal-specific text selection */
+.terminal-container ::selection {
   background: var(--terminal-selection);
   color: var(--terminal-text);
 }
 
-/* Monospace font for everything */
-body {
+/* Terminal-specific styling (not global body) */
+.terminal-container {
   font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
   background: var(--terminal-bg);
   color: var(--terminal-text);

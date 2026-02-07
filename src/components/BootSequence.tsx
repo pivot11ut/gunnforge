@@ -84,7 +84,7 @@ export default function BootSequence({ onComplete }: BootSequenceProps) {
   };
 
   return (
-    <div className="min-h-screen bg-black text-green-400 font-mono p-8 overflow-hidden">
+    <div className="terminal-container min-h-screen bg-black text-green-400 font-mono p-8 overflow-hidden">
       <div className="max-w-4xl mx-auto">
         {/* Skip button */}
         <button
