@@ -10,10 +10,11 @@ interface TerminalLine {
 }
 
 const COMMANDS = {
-  help: 'Available commands: help, about, projects, crafts, members, login, clear, ls',
+  help: 'Available commands: help, about, projects, crafts, members, login, clear, ls, reboot',
   about: 'GunnForge - A showcase of creative projects and crafts',
   ls: 'projects/  crafts/  members/  login',
   clear: '',
+  reboot: 'Rebooting system...',
 };
 
 export default function Terminal() {
@@ -82,6 +83,17 @@ export default function Terminal() {
 
       case 'clear':
         setHistory([]);
+        break;
+
+      case 'reboot':
+        setHistory(prev => [
+          ...prev,
+          { type: 'output', content: COMMANDS.reboot }
+        ]);
+        setTimeout(() => {
+          sessionStorage.removeItem('gunnforge_booted');
+          window.location.reload();
+        }, 1000);
         break;
 
       case 'projects':
