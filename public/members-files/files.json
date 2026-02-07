@@ -1,0 +1,13 @@
+{
+  "files": [
+    {
+      "id": "1",
+      "name": "Welcome to Members Area",
+      "description": "Introduction and quick start guide for new members",
+      "category": "documents",
+      "filename": "welcome.txt",
+      "uploadDate": "2025-01-15",
+      "size": "1 KB"
+    }
+  ]
+}
