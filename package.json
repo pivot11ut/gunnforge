@@ -7,7 +7,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "user:add": "node scripts/add-user.js",
+    "user:list": "node scripts/list-users.js",
+    "user:remove": "node scripts/remove-user.js"
   },
   "keywords": [],
   "author": "",

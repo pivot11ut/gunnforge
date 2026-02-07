@@ -4,6 +4,11 @@
       "id": "1",
       "username": "admin",
       "passwordHash": "$2b$10$CRES77ZoDSbV2SxnhsLlvulb5h0f6UtlAIYHIO23ZrU.Ij.mDrGku"
+    },
+    {
+      "id": "2",
+      "username": "jane",
+      "passwordHash": "$2b$10$330QylSU8RN1jyTxiXluEOzjTxqnuX5K//rvGJB76lYXNfl1caPDG"
     }
   ]
 }
