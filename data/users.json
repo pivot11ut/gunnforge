@@ -3,12 +3,37 @@
     {
       "id": "1",
       "username": "admin",
-      "passwordHash": "$2b$10$CRES77ZoDSbV2SxnhsLlvulb5h0f6UtlAIYHIO23ZrU.Ij.mDrGku"
+      "passwordHash": "$2b$10$8UfEq/aoeLFb3gzjr3odsuekfsfMQ9W1IG1okHcjb33hee0snZdv2"
     },
     {
       "id": "2",
       "username": "jane",
       "passwordHash": "$2b$10$330QylSU8RN1jyTxiXluEOzjTxqnuX5K//rvGJB76lYXNfl1caPDG"
+    },
+    {
+      "id": "3",
+      "username": "kurt",
+      "passwordHash": "$2b$10$CILL8ef1kXrIY4ISud48beO4PQnX3Vo93boE/VWkyIOgEGWIXSe6."
+    },
+    {
+      "id": "4",
+      "username": "dwayne",
+      "passwordHash": "$2b$10$lQokv//1nmNdDHVpQvpaBeSTMp8k0geMr3EKlHZ6cNBsqbyJ3SR9e"
+    },
+    {
+      "id": "5",
+      "username": "kyle",
+      "passwordHash": "$2b$10$8UfEq/aoeLFb3gzjr3odsuekfsfMQ9W1IG1okHcjb33hee0snZdv2"
+    },
+    {
+      "id": "6",
+      "username": "tim",
+      "passwordHash": "$2b$10$7PYNfZwtmJL2HXrb5qSvNup1mN/rJ451BZPDHAYvg2ooH/izVRbRm"
+    },
+    {
+      "id": "7",
+      "username": "jeff",
+      "passwordHash": "$2b$10$3mMPXrpIw.HI9rkn6WXWkuQRlZpO.tqlXlqtqCl9y5Po5dT3xFZ8C"
     }
   ]
 }
