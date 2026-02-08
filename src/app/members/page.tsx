@@ -12,11 +12,11 @@ interface MemberFile {
 
 async function getFiles(): Promise<MemberFile[]> {
   try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/members-files/files.json`,
-      { cache: 'no-store' }
-    );
-    const data = await response.json();
+    const { readFileSync } = await import('fs');
+    const { join } = await import('path');
+
+    const filePath = join(process.cwd(), 'data', 'member-files.json');
+    const data = JSON.parse(readFileSync(filePath, 'utf-8'));
     return data.files || [];
   } catch (error) {
     console.error('Error loading files:', error);
@@ -115,7 +115,7 @@ export default async function Members() {
                       </div>
                     </div>
                     <a
-                      href={`/members-files/${file.category}/${file.filename}`}
+                      href={`/api/files/download?category=${encodeURIComponent(file.category)}&filename=${encodeURIComponent(file.filename)}`}
                       download
                       className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-sm font-medium whitespace-nowrap"
                     >

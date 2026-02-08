@@ -2,13 +2,8 @@
   "users": [
     {
       "id": "1",
-      "username": "admin",
+      "username": "masteradmin",
       "passwordHash": "$2b$10$8UfEq/aoeLFb3gzjr3odsuekfsfMQ9W1IG1okHcjb33hee0snZdv2"
-    },
-    {
-      "id": "2",
-      "username": "jane",
-      "passwordHash": "$2b$10$330QylSU8RN1jyTxiXluEOzjTxqnuX5K//rvGJB76lYXNfl1caPDG"
     },
     {
       "id": "3",

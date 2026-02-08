@@ -16,6 +16,7 @@
 # misc
 .DS_Store
 *.pem
+.add-file.sh
 
 # debug
 npm-debug.log*
@@ -31,3 +32,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# member files - preserve structure, ignore content
+data/member-files/*.pdf
+data/member-files/*.zip
+data/member-files/**/*.pdf
+data/member-files/**/*.zip
+data/member-files/**/*.mp4
+data/member-files/**/*.jpg
+data/member-files/**/*.png
+data/member-files/**/*.txt
+data/member-files/**/*.doc
+data/member-files/**/*.docx
+# Keep the JSON metadata
+!data/member-files.json
