@@ -2,46 +2,25 @@ export default function Crafts() {
   const crafts = [
     {
       id: 1,
-      title: 'Handmade Ceramic Mugs',
-      description: 'Unique pottery pieces with custom glazes',
-      materials: ['Clay', 'Glaze', 'Kiln'],
-      image: '☕',
+      title: 'Laser Etched Coins',
+      description: 'Custom laser-etched designs on metal coins',
+      materials: ['Metal', 'Laser Engraver', 'Design Software'],
+      image: '🪙',
     },
     {
       id: 2,
       title: 'Wooden Cutting Boards',
-      description: 'End-grain cutting boards from reclaimed wood',
+      description: 'Bamboo and hardwood cutting boards with personalized engravings',
       materials: ['Walnut', 'Maple', 'Mineral Oil'],
       image: '🪵',
     },
     {
       id: 3,
-      title: 'Leather Journal Covers',
-      description: 'Hand-stitched leather covers for notebooks',
-      materials: ['Leather', 'Thread', 'Wax'],
+      title: 'Square Slate Coasters',
+      description: 'Custom engraved slate coasters for drinks',
+      materials: ['Slate', 'Laser Engraver', 'Design Software'],
       image: '📔',
-    },
-    {
-      id: 4,
-      title: 'Knitted Scarves',
-      description: 'Cozy winter scarves with unique patterns',
-      materials: ['Wool', 'Needles', 'Patterns'],
-      image: '🧣',
-    },
-    {
-      id: 5,
-      title: 'Glass Terrariums',
-      description: 'Miniature ecosystems in glass containers',
-      materials: ['Glass', 'Soil', 'Succulents'],
-      image: '🌱',
-    },
-    {
-      id: 6,
-      title: 'Macramé Wall Hangings',
-      description: 'Boho-style wall art using macramé techniques',
-      materials: ['Cotton Cord', 'Driftwood', 'Beads'],
-      image: '🪢',
-    },
+    }
   ];
 
   return (

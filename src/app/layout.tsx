@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'GunnForge',
-  description: 'Projects and crafts showcase with members area',
+  description: 'Projects, crafts, and a members area',
 };
 
 export default async function RootLayout({
