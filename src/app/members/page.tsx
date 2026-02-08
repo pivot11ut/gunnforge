@@ -1,4 +1,6 @@
-import { getCurrentUser } from '@/lib/auth';
+'use client';
+
+import { useState, useEffect } from 'react';
 
 interface MemberFile {
   id: string;
@@ -10,23 +12,58 @@ interface MemberFile {
   size: string;
 }
 
-async function getFiles(): Promise<MemberFile[]> {
-  try {
-    const { readFileSync } = await import('fs');
-    const { join } = await import('path');
-
-    const filePath = join(process.cwd(), 'data', 'member-files.json');
-    const data = JSON.parse(readFileSync(filePath, 'utf-8'));
-    return data.files || [];
-  } catch (error) {
-    console.error('Error loading files:', error);
-    return [];
-  }
+interface User {
+  username: string;
 }
 
-export default async function Members() {
-  const user = await getCurrentUser();
-  const files = await getFiles();
+export default function Members() {
+  const [user, setUser] = useState<User | null>(null);
+  const [files, setFiles] = useState<MemberFile[]>([]);
+  const [downloading, setDownloading] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const response = await fetch('/api/members/data');
+        const data = await response.json();
+        setUser(data.user);
+        setFiles(data.files);
+      } catch (error) {
+        console.error('Error loading data:', error);
+      }
+    }
+    loadData();
+  }, []);
+
+  const handleDownload = async (file: MemberFile) => {
+    try {
+      setDownloading(file.id);
+      const response = await fetch(
+        `/api/files/download?category=${encodeURIComponent(file.category)}&filename=${encodeURIComponent(file.filename)}`
+      );
+
+      if (!response.ok) {
+        const error = await response.json();
+        alert(`Download failed: ${error.error || 'Unknown error'}`);
+        return;
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = file.filename;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error('Download error:', error);
+      alert('Download failed. Please try again.');
+    } finally {
+      setDownloading(null);
+    }
+  };
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
@@ -114,13 +151,13 @@ export default async function Members() {
                         </div>
                       </div>
                     </div>
-                    <a
-                      href={`/api/files/download?category=${encodeURIComponent(file.category)}&filename=${encodeURIComponent(file.filename)}`}
-                      download
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-sm font-medium whitespace-nowrap"
+                    <button
+                      onClick={() => handleDownload(file)}
+                      disabled={downloading === file.id}
+                      className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-md transition-colors text-sm font-medium whitespace-nowrap"
                     >
-                      Download
-                    </a>
+                      {downloading === file.id ? 'Downloading...' : 'Download'}
+                    </button>
                   </div>
                 </div>
               ))}
