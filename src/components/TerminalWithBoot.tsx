@@ -2,9 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import BootSequence from './BootSequence';
-import Terminal from './Terminal';
+import Desktop from './Desktop';
 
-export default function TerminalWithBoot() {
+interface TerminalWithBootProps {
+  isAuthenticated?: boolean;
+  username?: string;
+}
+
+export default function TerminalWithBoot({ isAuthenticated, username }: TerminalWithBootProps) {
   const [showBoot, setShowBoot] = useState(true);
   const [hasBooted, setHasBooted] = useState(false);
 
@@ -27,5 +32,5 @@ export default function TerminalWithBoot() {
     return <BootSequence onComplete={handleBootComplete} />;
   }
 
-  return <Terminal />;
+  return <Desktop isAuthenticated={isAuthenticated} username={username} />;
 }
