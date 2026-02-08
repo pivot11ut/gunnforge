@@ -8,6 +8,177 @@
       "filename": "welcome.txt",
       "uploadDate": "2025-01-15",
       "size": "1 KB"
+    },
+    {
+      "id": "2",
+      "name": "Doctrine&Covenants.pdf",
+      "description": "The full combined notes from the lectures",
+      "category": "documents",
+      "filename": "Doctrine&Covenants.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "488 KB"
+    },
+    {
+      "id": "3",
+      "name": "D&C 6-9",
+      "description": "Lecture notes on D&C 6-9",
+      "category": "documents",
+      "filename": "D&C_6-9.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "127 KB"
+    },
+    {
+      "id": "4",
+      "name": "D&C 20-23",
+      "description": "Lecture notes on D&C 20-23",
+      "category": "documents",
+      "filename": "D&C_20-23.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "130 KB"
+    },
+    {
+      "id": "5",
+      "name": "D&C 39-42",
+      "description": "Lecture notes on D&C 39-42",
+      "category": "documents",
+      "filename": "D&C_39-42.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "130 KB"
+    },
+    {
+      "id": "6",
+      "name": "D&C 57-63",
+      "description": "Lecture notes on D&C 57-63",
+      "category": "documents",
+      "filename": "D&C_57-63.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "121 KB"
+    },
+    {
+      "id": "7",
+      "name": "D&C 63-64",
+      "description": "Lecture notes on D&C 63-64",
+      "category": "documents",
+      "filename": "D&C_63-64.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "120 KB"
+    },
+    {
+      "id": "8",
+      "name": "D&C 68",
+      "description": "Lecture notes on D&C 68",
+      "category": "documents",
+      "filename": "D&C_68.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "102 KB"
+    },
+    {
+      "id": "9",
+      "name": "D&C 82",
+      "description": "Lecture notes on D&C 82",
+      "category": "documents",
+      "filename": "D&C_82.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "137 KB"
+    },
+    {
+      "id": "10",
+      "name": "D&C 89",
+      "description": "Lecture notes on D&C 89",
+      "category": "documents",
+      "filename": "D&C_89-Keith_Perkins.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "126 KB"
+    },
+    {
+      "id": "11",
+      "name": "D&C 90-96",
+      "description": "Lecture notes on D&C 90-96",
+      "category": "documents",
+      "filename": "D&C_90-96.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "116 KB"
+    },
+    {
+      "id": "12",
+      "name": "D&C 101-105",
+      "description": "Lecture notes on D&C 101-105",
+      "category": "documents",
+      "filename": "D&C_101-105.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "120 KB"
+    },
+    {
+      "id": "13",
+      "name": "D&C 104",
+      "description": "Lecture notes on D&C 104",
+      "category": "documents",
+      "filename": "D&C_104-Mike_Wilcox.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "117 KB"
+    },
+    {
+      "id": "14",
+      "name": "D&C 107-112",
+      "description": "Lecture notes on D&C 107-112",
+      "category": "documents",
+      "filename": "D&C_107-112.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "117 KB"
+    },
+    {
+      "id": "15",
+      "name": "D&C 110-117",
+      "description": "Lecture notes on D&C 110-117",
+      "category": "documents",
+      "filename": "D&C_110-117.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "126 KB"
+    },
+    {
+      "id": "16",
+      "name": "D&C 117-120",
+      "description": "Lecture notes on D&C 117-120",
+      "category": "documents",
+      "filename": "D&C_117-120.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "116 KB"
+    },
+    {
+      "id": "17",
+      "name": "D&C 129-138",
+      "description": "Lecture notes on D&C 129-138",
+      "category": "documents",
+      "filename": "D&C_129-138.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "115 KB"
+    },
+    {
+      "id": "18",
+      "name": "D&C 131-135",
+      "description": "Lecture notes on D&C 131-135",
+      "category": "documents",
+      "filename": "D&C_131-135.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "120 KB"
+    },
+    {
+      "id": "19",
+      "name": "D&C 136",
+      "description": "Lecture notes on D&C 136",
+      "category": "documents",
+      "filename": "D&C_136.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "120 KB"
+    },
+    {
+      "id": "20",
+      "name": "D&C 107",
+      "description": "Lecture notes on D&C 107",
+      "category": "documents",
+      "filename": "Jerry_Lund-D&C_107+.pdf",
+      "uploadDate": "2025-02-07",
+      "size": "130 KB"
     }
   ]
 }
